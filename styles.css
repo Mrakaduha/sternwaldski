@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: #0b0f18;
+  color: #eaeaf0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+}
+
+/* Title */
+.title {
+  position: fixed;
+  top: 16px;
+  left: 20px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  opacity: 0.6;
+  z-index: 10;
+}
+
+/* North star */
+#north-star {
+  position: fixed;
+  top: 18%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4da6ff;
+  box-shadow: 0 0 18px rgba(77,166,255,0.9);
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+
+/* Space container */
+#space {
+  position: fixed;
+  inset: 0;
+  transform-origin: 50% 60%;
+}
+
+/* Star */
+.star {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.star:hover {
+  transform: translate(-50%, -50%) scale(1.4);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  max-width: 600px;
+  background: #f4f4f2;
+  color: #1a1a1a;
+  padding: 28px;
+  border-radius: 14px;
+  font-family: Georgia, serif;
+  line-height: 1.6;
+}
