@@ -78,7 +78,7 @@ const northStar = document.getElementById("north-star");
 
 northStar.addEventListener("click", () => {
   modalText.textContent =
-    "Mr. Sternwaldski keeps looking for the word that holds the others in place. The sky continues to move.";
+    "Mr. Sternwaldski keeps looking for words. The sky continues to move.";
   modal.classList.remove("hidden");
 });
 
